@@ -119,7 +119,7 @@ source ~/.bash_profile
 
 ### setenvを作成する
 ```
-vi /usr/local/src/tomcat/bin/setenv.sh
+vi /usr/local/tomcat/bin/setenv.sh
 ---ここから--------------------------------------
 #!/bin/sh
 export CATALINA_HOME=/usr/local/tomcat
@@ -131,7 +131,7 @@ export JAVA_OPTS="-Xms128m -Xmx512m"
 ### server.xml
 ```
 自動デプロイを有効にする　↓演習ではfalseだった
-vi /usr/local/src/tomcat/conf/server.xml
+vi /usr/local/tomcat/conf/server.xml
 unpackWARsとautoDeployはtrueのままでOK
 ```
 
