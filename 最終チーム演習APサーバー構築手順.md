@@ -51,8 +51,8 @@ sudo chown -R tomcat:tomcat /usr/local/tomcat
 cd /usr/local/
 ls -l
 実行結果（下記のような表示があれば成功）
-drwxr-xr-x. 9 tomcat tomcat 16384  1月 11 02:37 apache-tomcat-9.0.12
-lrwxrwxrwx. 1 tomcat tomcat    36  1月 11 02:31 tomcat -> /usr/local/apache-tomcat-9.0.12/
+drwxr-xr-x. 9 tomcat tomcat 16384 Mar  5 04:30 apache-tomcat-9.0.12
+lrwxrwxrwx. 1 tomcat tomcat    32 Mar  5 01:10 tomcat -> /usr/local/apache-tomcat-9.0.12/
 ```
 
 ### ユニットファイルをtomcat.serviceと言う名前で、"/etc/systemd/system/"に作成し、エディタ起動
@@ -148,8 +148,9 @@ sudo systemctl start tomcat.service
 sudo systemctl status tomcat.service
 実行結果
  tomcat.service - Tomcat Web Server
+  ● tomcat.service - Apache Tomcat 9.0.12
      Loaded: loaded (/etc/systemd/system/tomcat.service; enabled; preset: disabled)
-     Active: active (running) since Wed 2024-01-17 19:45:26 JST; 4min 42s ago
+     Active: active (exited) since Fri 2026-03-06 00:02:30 UTC; 7min ago
 ```
 ### デプロイ
 ```
